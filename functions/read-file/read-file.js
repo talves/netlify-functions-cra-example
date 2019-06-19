@@ -1,7 +1,6 @@
 const fs = require('fs')
-const path = require('path')
 
-const contents = fs.readFileSync(path.resolve(__dirname, './assets/test.txt'))
+const contents = fs.readFileSync(require.resolve('./assets/test.txt'))
 
 exports.handler = function(event, context, callback) {
   callback(null, {
