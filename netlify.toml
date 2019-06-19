@@ -1,0 +1,4 @@
+[build]
+  functions = "functions"
+  build = "yarn build"
+  deploy = "build"

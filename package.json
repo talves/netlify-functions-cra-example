@@ -1,5 +1,5 @@
 {
-  "name": "netlify-lambda-cra",
+  "name": "netlify-functions-cra-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,10 +8,11 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run pre:joke-async && react-scripts start",
+    "build": "npm run pre:joke-async && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pre:joke-async": "cd ./functions/joke-async && npm install"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "netlify-cli": "2.11.23"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "name": "joke-async",
+  "version": "0.1.0",
+  "private": true,
+  "main": "joke-async.js",
+  "scripts": {},
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  }
+}
