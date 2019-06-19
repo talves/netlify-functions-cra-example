@@ -1,4 +1,4 @@
 [build]
   functions = "functions"
-  build = "yarn build"
-  deploy = "build"
+  command = "yarn build"
+  publish = "build"
